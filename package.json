@@ -12,6 +12,7 @@
   "dependencies": {
     "react": "^18.2.0",
     "react-icons": "^4.8.0",
+    "tailwind-scrollbar-hide": "^1.1.7",
     "truffle": "^5.5.21"
   }
 }

@@ -3,8 +3,8 @@ import { BsFillTrashFill } from 'react-icons/bs'
 const Task = ({ taskText , onClick }) => {
   return (
     <div className='flex items-center text-white'>
-      <div className=' bg-[#031956] text-[#b6c7db] flex w-[70%] rounded-[15px] mb-[10px] flex-1'>
-        <div className='flex items-center justify-between w-full p-[20px] text-xl'>
+      <div className=' bg-[#ffffff] font-bold flex w-[100%] rounded-xl mb-[10px] flex-1'>
+        <div className='flex items-center justify-between w-full p-[10px] text-sm text-black '>
           {taskText}
         </div>
       </div>

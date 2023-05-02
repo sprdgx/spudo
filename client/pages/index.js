@@ -136,7 +136,7 @@ export default function Home() {
   }
 
   return (
-    <div className='bg-[#97b5fe] h-screen w-screen flex justify-center py-6'>
+    <div className='bg-[#000000] h-screen w-screen flex justify-center py-6'>
       {!isLoggedIn ? <ConnectWalletButton connectWallet={connectWallet} /> :
         'is this the correct network?' ? <TodoList tasks={tasks} setInput={setInput} addTask={addTask} input={input} deleteTask={deleteTask} /> : <WrongNetworkMessage />}
     </div>

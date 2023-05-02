@@ -1,9 +1,10 @@
 // SPDX-License-Identifier: MIT
-pragma solidity 0.8.15;
+pragma solidity >=0.4.22 <0.9.0;
 
 contract TaskContract {
     event Addtask(address recipient , uint taskId);
     event Deletetask(uint taskId , bool isDeleted);
+    event profile(string name , string profilePicture );
 
     struct Task {
       uint id;
@@ -44,5 +45,9 @@ contract TaskContract {
         emit Deletetask(taskId, isDeleted); 
       }
     }
-  
+
+    function addprofile(string memory name, string memory profilePicture) external pure {
+        name = name;
+        profilePicture = profilePicture;
+    }
 }
