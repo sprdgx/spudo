@@ -3,7 +3,6 @@ import ConnectWalletButton from '../components/ConnectWalletButton'
 import TodoList from '../components/TodoList'
 import TaskAbi from '../../blockchain/build/contracts/TaskContract.json'
 import { TaskContractAddress } from '../config'
-import {Helmet} from "react-helmet";
 
 import { ethers } from 'ethers'
 import { useEffect, useState } from 'react'
@@ -138,10 +137,9 @@ export default function Home() {
 
   return (
     <>
-    <Helmet>
+    <head>
       <title>SPUDO</title>
-      <meta name="description" content="WEB3 TODO LIST" />
-    </Helmet>
+    </head>
     <div className='bg-[#000000] h-screen w-screen flex justify-center py-6'>
         {!isLoggedIn ? <ConnectWalletButton connectWallet={connectWallet} /> :
           'is this the correct network?' ? <TodoList tasks={tasks} setInput={setInput} addTask={addTask} input={input} deleteTask={deleteTask} /> : <WrongNetworkMessage />}
